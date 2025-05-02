@@ -1,0 +1,44 @@
+body {
+    width: 500px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #toast {
+    visibility: hidden;
+    min-width: 200px;
+    margin-left: -100px;
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    bottom: 20px;
+    font-size: 16px;
+  }
+  
+  #toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 1s;
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 20px; opacity: 1;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 20px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  /* Auto detect dark mode */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+  }
+  

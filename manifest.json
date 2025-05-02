@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Dinks Web Customizer",
+  "version": "1.1",
+  "description": "Allows you to change how elements on Dinkleberg's GMod Website are displayed.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.dinklebergsgmod.com/site/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

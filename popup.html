@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Site Elements</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="popup.css" rel="stylesheet">
+  <script src="popup.js" defer></script>
+</head>
+<body class="p-3">
+  <h2 class="text-center mb-3">Hide Elements</h2>
+
+  <div class="row" id="toggleRow">
+    <div class="col-6" id="toggleListLeft"></div>
+    <div class="col-6" id="toggleListRight"></div>
+  </div>
+
+  <button id="saveButton" class="btn btn-primary w-100 mt-4">Save Changes</button>
+  <button id="resetButton" class="btn btn-danger w-100 mt-2">Reset All</button>
+
+  <!-- Toast -->
+  <div id="toast" class="toast">Saved!</div>
+</body>
+</html>
